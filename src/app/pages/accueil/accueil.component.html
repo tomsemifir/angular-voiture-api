@@ -1,0 +1,10 @@
+<p>accueil works!</p>
+
+<div class="voitures">
+    <ng-container *ngFor="let voiture of voitures">
+        <app-voiture [voiture]="voiture" (deleteVoitureEvent)="deleteVoiture($event)"></app-voiture>
+    </ng-container>
+</div>
+
+
+<p *ngIf="errorMessage">Nous avons rencontré un problème, veuillez réessayer plus tard.</p>

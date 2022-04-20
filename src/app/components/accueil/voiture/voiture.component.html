@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <img src="https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{voiture.marque}}</h5>
+      <p class="card-text">Couleur : {{voiture.couleur}}</p>
+      <p class="card-text">Type de moteur : {{voiture.typeMoteur}}</p>
+      <p class="card-text">Prix : {{voiture.prix}}€</p>
+      <a class="btn btn-primary" [routerLink]="['/voiture', voiture.id]">Voir détails</a>
+      <button class="btn btn-danger" (click)="deleteVoiture()">Supprimer</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<button (click)="goToHome()" class="btn btn-danger">Retour à la page d'accueil</button>
+
+<p>Bienvenue sur la page de la voiture n° {{id}}</p>
+
+<form [formGroup]="voitureForm" (ngSubmit)="updateVoiture()">
+
+    <label for="marque">Marque:</label>
+    <input type="text" name="marque" formControlName="marque">
+    <label for="couleur">Couleur:</label>
+    <input type="text" name="couleur" formControlName="couleur">
+    <label for="moteur">Type de moteur:</label>
+    <input type="text" name="moteur" formControlName="typeMoteur">
+    <label for="prix">Prix:</label>
+    <input type="number" name="prix" formControlName="prix">
+
+    <button class="btn btn-success" *ngIf="!displayLoading">Modifier</button>
+    <div class="spinner-border text-success" role="status" *ngIf="displayLoading">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <p *ngIf="displayErrorMessage">Un problème est survenu pendant la modification.</p>
+</form>

@@ -1,0 +1,22 @@
+<form [formGroup]="voitureForm" (ngSubmit)="addVoiture()">
+    <label for="marque">Marque :</label>
+    <input type="text" name="marque" formControlName="marque">
+    <label for="couleur">Couleur :</label>
+    <input type="text" name="couleur" formControlName="couleur">
+
+<!-- Select moteur -->
+    <label for="moteur">Type de moteur :</label>
+    <select class="form-select" formControlName="typeMoteur">
+        <option value="" selected disabled hidden>Choisissez un type de moteur</option>
+        <option value="diesel">Diesel</option>
+        <option value="essence">Essence</option>
+        <option value="electrique">Electrique</option>
+        <option value="hybride">Hybride</option>
+        <option value="hydrogene">Hydrogène</option>
+    </select>
+
+    <label for="prix">Prix :</label>
+    <input type="number" name="prix" formControlName="prix">
+
+    <button class="btn btn-success">Ajouter voiture</button>
+</form>

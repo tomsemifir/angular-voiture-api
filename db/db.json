@@ -1,0 +1,32 @@
+{
+  "voitures": [
+    {
+      "id": 1,
+      "marque": "Tesla",
+      "couleur": "rouge",
+      "typeMoteur": "electrique",
+      "prix": 40000
+    },
+    {
+      "id": 2,
+      "marque": "Peugeot",
+      "couleur": "jaune",
+      "typeMoteur": "electrique",
+      "prix": 30000
+    },
+    {
+      "id": 3,
+      "marque": "Audi",
+      "couleur": "noire",
+      "typeMoteur": "diesel",
+      "prix": 59995
+    },
+    {
+      "marque": "Audi",
+      "couleur": "Rouge",
+      "typeMoteur": "hybride",
+      "prix": 50000,
+      "id": 5
+    }
+  ]
+}
